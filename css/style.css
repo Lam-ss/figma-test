@@ -459,7 +459,7 @@ body {
 /* Intro styles start */
 
 .intro {
-    height: 100vh;
+    min-height: 100vh;
     background: url(../img/Hero-bg.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
@@ -472,7 +472,7 @@ body {
     line-height: 60px;
     color: white;
     margin-bottom: 22px;
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .intro__subtitle {
@@ -490,7 +490,7 @@ body {
 
 .search-form__field {
     background-color: transparent;
-    background: url(../img/svg/Oval.svg) no-repeat left top;
+    background: url(../img/svg/Oval.svg) no-repeat left top 6px;
     background-size: 20px;
     border: 0;
     border-bottom: 2px solid #BFC0C5;
@@ -500,9 +500,30 @@ body {
     font-weight: 500;
     font-style: 18px;
     color: #fff;
-
-
 }
+
+.search-form__field::placeholder {
+    font-weight: 500;
+    font-style: 18px;
+    color: #fff;
+}
+
+.search-form__submit {
+    padding: 15px 39px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    background: blue;
+    border: 0;
+}
+
+.search-form__submit:hover,
+.search-form__submit:focus,
+.search-form__submit:active {
+    opacity: 0.8;
+}
+
 /* Intro styles end */
 /* Intro styles start */
 
